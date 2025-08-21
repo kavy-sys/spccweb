@@ -34,31 +34,16 @@
         <img src="{{ asset('spccweb/img/team/avatar-geraldine.png') }}" alt="avatar" class="avatar">
         <h3 class="name">Geraldine Mae Gonzales</h3>
         <p>Project Manager</p>
-        <p>
-          <a href="{{ asset('spccweb/resume/geraldine.pdf') }}" class="link">
-            resume
-          </a>
-        </p>
       </div>
       <div class="team-member">
         <img src="{{ asset('spccweb/img/team/avatar-bryan.png') }}" alt="avatar" class="avatar">
         <h3 class="name">Bryan Garcia</h3>
         <p>System Analyst/QA</p>
-        <p>
-          <a href="{{ asset('spccweb/resume/bryan.pdf') }}" class="link">
-            resume
-          </a>
-        </p>
       </div>
       <div class="team-member">
         <img src="{{ asset('spccweb/img/team/avatar-joeylene.png') }}" alt="avatar" class="avatar">
         <h3 class="name">Joeylene Rivera</h3>
         <p>Web Developer/Designer</p>
-        <p>
-          <a href="{{ asset('spccweb/resume/joeylene.pdf') }}" class="link">
-            resume
-          </a>
-        </p>
       </div>
     </div>
   </div>
