@@ -175,41 +175,51 @@ c. Congrats! You're all set.
 
 a. With docker and docker-compose installed just run:
 
-```
-docker composer up -d
+```bash
+docker compose up -d
 ```
 
 b. Install Dependencies:
 
-```
+```bash
 docker exec -it spccweb-app composer install
 ```
 
 c. Copy the `env.example` to `.env` and configure database access:
 
-```
+```bash
 docker exec -it spccweb-app cp .env.example .env
 ```
 
 d. Generate the Application Key:
 
-```
+```bash
 docker exec -it spccweb-app php artisan key:generate
 ```
 
 e. Run the Database Migration:
 
-```
+```bash
 docker exec -it spccweb-app php artisan migrate
 ```
 
 f. Populate the Database by running the Database Seeder (if any);
 
-```
+```bash
 docker exec -it spccweb-app php artisan db:seed
 ```
 
-g. Check the app:
+g. Create a symbolic link:
+
+```bash
+docker exec -it spccweb-app php artisan storage:link
+```
+
+h. In the root directory of the repository, go to `public/img`. Copy both `cover_images` and `profile_pictures` to `public/storage/`.
+
+i. After that you're all set! You may now use the dummy accounts.
+
+j. Check the app:
 
 -   Open a browser and go to localhost:8000
 
