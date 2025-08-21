@@ -1,5 +1,7 @@
 # SPCC Portal
 
+> Note: This is an old project that is no longer maintained since 2020.
+
 ![SPCC Portal](public/img/spcc-portal.gif)
 
 An electronic grading web application, integrated with a school website, built using Laravel and Bootstrap. A capstone project for the Bachelor's Degree of Information Technology in SPCC - Caloocan.
